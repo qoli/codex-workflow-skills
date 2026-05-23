@@ -1,0 +1,4 @@
+interface:
+  display_name: "Codex Session Distill Search"
+  short_description: "Summarize broad Codex session activity with distill."
+  default_prompt: "Use Codex Session Distill Search to summarize what I worked on across local Codex sessions for a date or time range."

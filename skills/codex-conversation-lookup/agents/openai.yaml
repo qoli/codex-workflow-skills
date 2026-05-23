@@ -1,0 +1,4 @@
+interface:
+  display_name: "Codex Conversation Lookup"
+  short_description: "Find and summarize local Codex threads"
+  default_prompt: "Use $codex-conversation-lookup to locate a Codex conversation by UUID and prepare a safe handoff summary."

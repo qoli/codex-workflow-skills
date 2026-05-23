@@ -1,0 +1,4 @@
+interface:
+  display_name: "CLI Model Chat"
+  short_description: "Ask another model through a CLI bridge"
+  default_prompt: "Use $cli-model-chat to ask DeepSeek v4 Pro a focused one-to-one question."
