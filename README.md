@@ -2,7 +2,8 @@
 
 Practical Codex skills extracted from real local workflows. These skills focus on
 recovering context, improving debugging discipline, consulting a second model,
-and running Xiaohongshu content workflows through Figma plus browser handoff.
+enforcing explicit failure contracts, and running Xiaohongshu content workflows
+through Figma plus browser handoff.
 
 ## Skills
 
@@ -11,6 +12,7 @@ and running Xiaohongshu content workflows through Figma plus browser handoff.
 | `codex-conversation-lookup` | Recover and summarize a specific local Codex thread by UUID without dumping raw transcripts. |
 | `codex-session-distill-search` | Summarize recent Codex work across many sessions and turn logs into a safe activity recap. |
 | `observability-first-debugging` | Debug unclear failures by adding targeted evidence before changing behavior. |
+| `no-fallback-policy` | Require explicit failure instead of hidden fallback unless fallback is approved for the current task. |
 | `cli-model-chat` | Ask a focused second-model question through a local one-to-one chat wrapper. |
 | `xhs-figma-cards` | Turn blog posts, product notes, or launch notes into Xiaohongshu card designs in Figma. |
 | `xhs-publish-handoff` | Validate an approved Xiaohongshu image-post package and optionally fill the creator page, stopping before final publish. |
@@ -40,6 +42,7 @@ mkdir -p "$HOME/.codex/skills"
 ln -s "$PWD/skills/codex-conversation-lookup" "$HOME/.codex/skills/codex-conversation-lookup"
 ln -s "$PWD/skills/codex-session-distill-search" "$HOME/.codex/skills/codex-session-distill-search"
 ln -s "$PWD/skills/observability-first-debugging" "$HOME/.codex/skills/observability-first-debugging"
+ln -s "$PWD/skills/no-fallback-policy" "$HOME/.codex/skills/no-fallback-policy"
 ln -s "$PWD/skills/cli-model-chat" "$HOME/.codex/skills/cli-model-chat"
 ln -s "$PWD/skills/xhs-figma-cards" "$HOME/.codex/skills/xhs-figma-cards"
 ln -s "$PWD/skills/xhs-publish-handoff" "$HOME/.codex/skills/xhs-publish-handoff"
@@ -55,6 +58,7 @@ If your Codex installation includes the skill creator validator:
 python3 "$HOME/.codex/skills/.system/skill-creator/scripts/quick_validate.py" skills/codex-conversation-lookup
 python3 "$HOME/.codex/skills/.system/skill-creator/scripts/quick_validate.py" skills/codex-session-distill-search
 python3 "$HOME/.codex/skills/.system/skill-creator/scripts/quick_validate.py" skills/observability-first-debugging
+python3 "$HOME/.codex/skills/.system/skill-creator/scripts/quick_validate.py" skills/no-fallback-policy
 python3 "$HOME/.codex/skills/.system/skill-creator/scripts/quick_validate.py" skills/cli-model-chat
 python3 "$HOME/.codex/skills/.system/skill-creator/scripts/quick_validate.py" skills/xhs-figma-cards
 python3 "$HOME/.codex/skills/.system/skill-creator/scripts/quick_validate.py" skills/xhs-publish-handoff
