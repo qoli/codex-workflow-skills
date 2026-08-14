@@ -14,6 +14,7 @@ through Figma plus browser handoff.
 | `observability-first-debugging` | Debug unclear failures by adding targeted evidence before changing behavior. |
 | `no-fallback-policy` | Require explicit failure instead of hidden fallback unless fallback is approved for the current task. |
 | `cli-model-chat` | Ask a focused second-model question through a local one-to-one chat wrapper. |
+| `delegate-to-luna-max` | Forward the current task to a Luna Max subagent and verify its result. |
 | `xhs-figma-cards` | Turn blog posts, product notes, or launch notes into Xiaohongshu card designs in Figma. |
 | `xhs-publish-handoff` | Validate an approved Xiaohongshu image-post package and optionally fill the creator page, stopping before final publish. |
 
@@ -44,6 +45,7 @@ ln -s "$PWD/skills/codex-session-distill-search" "$HOME/.codex/skills/codex-sess
 ln -s "$PWD/skills/observability-first-debugging" "$HOME/.codex/skills/observability-first-debugging"
 ln -s "$PWD/skills/no-fallback-policy" "$HOME/.codex/skills/no-fallback-policy"
 ln -s "$PWD/skills/cli-model-chat" "$HOME/.codex/skills/cli-model-chat"
+ln -s "$PWD/skills/delegate-to-luna-max" "$HOME/.codex/skills/delegate-to-luna-max"
 ln -s "$PWD/skills/xhs-figma-cards" "$HOME/.codex/skills/xhs-figma-cards"
 ln -s "$PWD/skills/xhs-publish-handoff" "$HOME/.codex/skills/xhs-publish-handoff"
 ```
@@ -60,6 +62,7 @@ python3 "$HOME/.codex/skills/.system/skill-creator/scripts/quick_validate.py" sk
 python3 "$HOME/.codex/skills/.system/skill-creator/scripts/quick_validate.py" skills/observability-first-debugging
 python3 "$HOME/.codex/skills/.system/skill-creator/scripts/quick_validate.py" skills/no-fallback-policy
 python3 "$HOME/.codex/skills/.system/skill-creator/scripts/quick_validate.py" skills/cli-model-chat
+python3 "$HOME/.codex/skills/.system/skill-creator/scripts/quick_validate.py" skills/delegate-to-luna-max
 python3 "$HOME/.codex/skills/.system/skill-creator/scripts/quick_validate.py" skills/xhs-figma-cards
 python3 "$HOME/.codex/skills/.system/skill-creator/scripts/quick_validate.py" skills/xhs-publish-handoff
 ```

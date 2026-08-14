@@ -1,0 +1,4 @@
+interface:
+  display_name: "Delegate to Luna Max"
+  short_description: "Forward the current task to a Luna Max subagent"
+  default_prompt: "Use $delegate-to-luna-max to delegate this task to a Luna Max subagent."
