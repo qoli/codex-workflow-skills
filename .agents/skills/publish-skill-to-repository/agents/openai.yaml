@@ -1,0 +1,4 @@
+interface:
+  display_name: "Publish Skill to Repository"
+  short_description: "Delegate Skill publishing to Luna Medium safely"
+  default_prompt: "Use $publish-skill-to-repository with a Luna Medium subagent to copy an installed Codex Skill into this repository, then verify and publish the scoped change."
